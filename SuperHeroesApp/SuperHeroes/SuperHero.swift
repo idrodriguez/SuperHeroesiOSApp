@@ -9,5 +9,5 @@
 import Foundation
 
 protocol SuperHero{
-    func getName() -> String
+    func getName() -> StringÑÑ
 }
