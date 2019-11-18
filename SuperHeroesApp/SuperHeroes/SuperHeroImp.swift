@@ -11,8 +11,8 @@ import Foundation
 class SuperHeroImp: SuperHero {
     var name: String
     
-    init(){
-        name = ""
+    init(name: String){
+        self.name = name
     }
     
     func getName() -> String{

@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E8066912382F71800AA8F1C /* FactorySuperHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8066902382F71800AA8F1C /* FactorySuperHero.swift */; };
+		0E8066932382F78900AA8F1C /* FactorySuperHeroImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8066922382F78900AA8F1C /* FactorySuperHeroImpl.swift */; };
 		35994DCC2382DEA50057F717 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35994DCB2382DEA50057F717 /* AppDelegate.swift */; };
-		35994DCE2382DEA50057F717 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35994DCD2382DEA50057F717 /* ViewController.swift */; };
+		35994DCE2382DEA50057F717 /* TableMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35994DCD2382DEA50057F717 /* TableMainViewController.swift */; };
 		35994DD12382DEA50057F717 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35994DCF2382DEA50057F717 /* Main.storyboard */; };
 		35994DD32382DEA60057F717 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35994DD22382DEA60057F717 /* Assets.xcassets */; };
 		35994DD62382DEA60057F717 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35994DD42382DEA60057F717 /* LaunchScreen.storyboard */; };
@@ -17,9 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E8066902382F71800AA8F1C /* FactorySuperHero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactorySuperHero.swift; sourceTree = "<group>"; };
+		0E8066922382F78900AA8F1C /* FactorySuperHeroImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactorySuperHeroImpl.swift; sourceTree = "<group>"; };
 		35994DC82382DEA50057F717 /* SuperHeroesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperHeroesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35994DCB2382DEA50057F717 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		35994DCD2382DEA50057F717 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		35994DCD2382DEA50057F717 /* TableMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableMainViewController.swift; sourceTree = "<group>"; };
 		35994DD02382DEA50057F717 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		35994DD22382DEA60057F717 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35994DD52382DEA60057F717 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,7 +64,7 @@
 			children = (
 				35F7FA652382E5A200BE3DF2 /* SuperHeroes */,
 				35994DCB2382DEA50057F717 /* AppDelegate.swift */,
-				35994DCD2382DEA50057F717 /* ViewController.swift */,
+				35994DCD2382DEA50057F717 /* TableMainViewController.swift */,
 				35994DCF2382DEA50057F717 /* Main.storyboard */,
 				35994DD22382DEA60057F717 /* Assets.xcassets */,
 				35994DD42382DEA60057F717 /* LaunchScreen.storyboard */,
@@ -74,6 +78,8 @@
 			children = (
 				35F7FA662382E61B00BE3DF2 /* SuperHero.swift */,
 				35F7FA682382E70900BE3DF2 /* SuperHeroImp.swift */,
+				0E8066902382F71800AA8F1C /* FactorySuperHero.swift */,
+				0E8066922382F78900AA8F1C /* FactorySuperHeroImpl.swift */,
 			);
 			path = SuperHeroes;
 			sourceTree = "<group>";
@@ -149,8 +155,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E8066932382F78900AA8F1C /* FactorySuperHeroImpl.swift in Sources */,
 				35F7FA692382E70900BE3DF2 /* SuperHeroImp.swift in Sources */,
-				35994DCE2382DEA50057F717 /* ViewController.swift in Sources */,
+				35994DCE2382DEA50057F717 /* TableMainViewController.swift in Sources */,
+				0E8066912382F71800AA8F1C /* FactorySuperHero.swift in Sources */,
 				35994DCC2382DEA50057F717 /* AppDelegate.swift in Sources */,
 				35F7FA672382E61B00BE3DF2 /* SuperHero.swift in Sources */,
 			);
@@ -299,7 +307,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K88A5H84VS;
+				DEVELOPMENT_TEAM = B2NNQ35DTC;
 				INFOPLIST_FILE = SuperHeroesApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -317,7 +325,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K88A5H84VS;
+				DEVELOPMENT_TEAM = B2NNQ35DTC;
 				INFOPLIST_FILE = SuperHeroesApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
