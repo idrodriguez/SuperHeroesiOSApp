@@ -1,0 +1,39 @@
+Name: Scarlet Witch
+Photo: https://i.annihil.us/u/prod/marvel/i/mg/9/b0/537bc2375dfb9.jpg
+Description:
+Powers:
+
+Name: Iron Man
+Photo: https://i.annihil.us/u/prod/marvel/i/mg/c/60/55b6a28ef24fa.jpg
+Description:
+Powers:
+
+Name: Wolverine
+Photo: https://i.annihil.us/u/prod/marvel/i/mg/9/00/537bcb1133fd7.jpg
+Description:
+Powers:
+
+Name: Hulk
+Photo: https://x.annihil.us/u/prod/marvel/i/mg/e/e0/537bafa34baa9.jpg
+Description:
+Powers:
+
+Name: Ultron
+Photo: https://i.annihil.us/u/prod/marvel/i/mg/9/a0/537bc7f6d5d23.jpg
+Description:
+Powers:
+
+Name: Black Panther
+Photo: https://i.annihil.us/u/prod/marvel/i/mg/9/03/537ba26276348.jpg
+Description:
+Powers:
+
+Name: Captain America
+Photo: https://x.annihil.us/u/prod/marvel/i/mg/9/80/537ba5b368b7d.jpg
+Description:
+Powers:
+
+Name: Captain Marvel
+Photo: https://x.annihil.us/u/prod/marvel/i/mg/6/30/537ba61b764b4.jpg
+Description:
+Powers:
