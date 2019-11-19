@@ -18,14 +18,14 @@ class FactorySuperHeroImpl : FactorySuperHero {
         
         var superHeroArray : [SuperHero] = []
         
-        superHeroArray.append(SuperHeroImp(name: "Scarlet Witch"))
-        superHeroArray.append(SuperHeroImp(name: "Iron Man"))
-        superHeroArray.append(SuperHeroImp(name: "Wolverine"))
-        superHeroArray.append(SuperHeroImp(name: "Hulk"))
-        superHeroArray.append(SuperHeroImp(name: "Ultron"))
-        superHeroArray.append(SuperHeroImp(name: "Black Panter"))
-        superHeroArray.append(SuperHeroImp(name: "Captain America"))
-        superHeroArray.append(SuperHeroImp(name: "Captain Marvel"))
+        superHeroArray.append(SuperHero(name: "Scarlet Witch"))
+        superHeroArray.append(SuperHero(name: "Iron Man"))
+        superHeroArray.append(SuperHero(name: "Wolverine"))
+        superHeroArray.append(SuperHero(name: "Hulk"))
+        superHeroArray.append(SuperHero(name: "Ultron"))
+        superHeroArray.append(SuperHero(name: "Black Panter"))
+        superHeroArray.append(SuperHero(name: "Captain America"))
+        superHeroArray.append(SuperHero(name: "Captain Marvel"))
 
         return superHeroArray
     }

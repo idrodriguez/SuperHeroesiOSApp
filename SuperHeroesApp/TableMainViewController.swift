@@ -24,7 +24,7 @@ class TableMainViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SuperHeroCell", for: indexPath)
         let superHero = superHeroArray[indexPath.row]
-        cell.textLabel?.text = superHero.getName()
+        cell.textLabel?.text = superHero.name
         
         return cell
     }

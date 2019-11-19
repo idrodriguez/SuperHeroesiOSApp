@@ -14,8 +14,7 @@
 		35994DD12382DEA50057F717 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35994DCF2382DEA50057F717 /* Main.storyboard */; };
 		35994DD32382DEA60057F717 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35994DD22382DEA60057F717 /* Assets.xcassets */; };
 		35994DD62382DEA60057F717 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35994DD42382DEA60057F717 /* LaunchScreen.storyboard */; };
-		35F7FA672382E61B00BE3DF2 /* SuperHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F7FA662382E61B00BE3DF2 /* SuperHero.swift */; };
-		35F7FA692382E70900BE3DF2 /* SuperHeroImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F7FA682382E70900BE3DF2 /* SuperHeroImp.swift */; };
+		35F7FA692382E70900BE3DF2 /* SuperHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F7FA682382E70900BE3DF2 /* SuperHero.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +27,7 @@
 		35994DD22382DEA60057F717 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35994DD52382DEA60057F717 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35994DD72382DEA60057F717 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		35F7FA662382E61B00BE3DF2 /* SuperHero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHero.swift; sourceTree = "<group>"; };
-		35F7FA682382E70900BE3DF2 /* SuperHeroImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroImp.swift; sourceTree = "<group>"; };
+		35F7FA682382E70900BE3DF2 /* SuperHero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHero.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +74,7 @@
 		35F7FA652382E5A200BE3DF2 /* SuperHeroes */ = {
 			isa = PBXGroup;
 			children = (
-				35F7FA662382E61B00BE3DF2 /* SuperHero.swift */,
-				35F7FA682382E70900BE3DF2 /* SuperHeroImp.swift */,
+				35F7FA682382E70900BE3DF2 /* SuperHero.swift */,
 				0E8066902382F71800AA8F1C /* FactorySuperHero.swift */,
 				0E8066922382F78900AA8F1C /* FactorySuperHeroImpl.swift */,
 			);
@@ -156,11 +153,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E8066932382F78900AA8F1C /* FactorySuperHeroImpl.swift in Sources */,
-				35F7FA692382E70900BE3DF2 /* SuperHeroImp.swift in Sources */,
+				35F7FA692382E70900BE3DF2 /* SuperHero.swift in Sources */,
 				35994DCE2382DEA50057F717 /* TableMainViewController.swift in Sources */,
 				0E8066912382F71800AA8F1C /* FactorySuperHero.swift in Sources */,
 				35994DCC2382DEA50057F717 /* AppDelegate.swift in Sources */,
-				35F7FA672382E61B00BE3DF2 /* SuperHero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

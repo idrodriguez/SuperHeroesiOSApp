@@ -1,5 +1,5 @@
 //
-//  SuperHeroe.swift
+//  SuperHeroImp.swift
 //  SuperHeroesApp
 //
 //  Created by Galera, Javier on 18/11/2019.
@@ -8,6 +8,10 @@
 
 import Foundation
 
-protocol SuperHero{
-    func getName() -> String
+struct SuperHero {
+    let name: String
+    
+    init(name: String){
+        self.name = name
+    }    
 }
