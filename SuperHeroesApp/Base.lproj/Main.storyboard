@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kJt-h6-jrQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2Zr-Xd-3Pf">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,7 +9,23 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table Main View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="RAf-fn-h0x">
+            <objects>
+                <navigationController id="2Zr-Xd-3Pf" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sGA-9w-Ezp">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="kJt-h6-jrQ" kind="relationship" relationship="rootViewController" id="5dV-ua-14j"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vUN-l5-9Mw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-842" y="-121"/>
+        </scene>
+        <!--Super Hero List-->
         <scene sceneID="krM-gc-cIZ">
             <objects>
                 <tableViewController id="kJt-h6-jrQ" customClass="TableMainViewController" customModule="SuperHeroesApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,6 +48,7 @@
                             <outlet property="delegate" destination="kJt-h6-jrQ" id="qLs-yE-mPr"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Super Hero List" id="8gS-5a-uh2"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vcy-AL-yZW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
