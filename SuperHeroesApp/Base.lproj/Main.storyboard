@@ -45,14 +45,18 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brW-kg-gdo">
-                                            <rect key="frame" x="166" y="23" width="42" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="brW-kg-gdo">
+                                            <rect key="frame" x="20" y="24" width="335" height="20"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="brW-kg-gdo" secondAttribute="trailing" constant="20" symbolic="YES" id="9zv-rg-BCZ"/>
+                                        <constraint firstItem="brW-kg-gdo" firstAttribute="leading" secondItem="vmM-yz-VA2" secondAttribute="leading" constant="20" symbolic="YES" id="Kug-LB-zQl"/>
+                                        <constraint firstAttribute="bottom" secondItem="brW-kg-gdo" secondAttribute="bottom" constant="-0.5" id="wYS-cZ-PVD"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="superHeroImage" destination="21n-Mf-PGf" id="i3j-wz-BC7"/>

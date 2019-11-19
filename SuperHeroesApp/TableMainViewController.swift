@@ -22,11 +22,11 @@ class TableMainViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SuperHeroCell", for: indexPath)
+        let customCell = tableView.dequeueReusableCell(withIdentifier: "SuperHeroCell", for: indexPath) as! CustomCell
         let superHero = superHeroArray[indexPath.row]
-        cell.textLabel?.text = superHero.name
-        
-        return cell
+        customCell.superHeroNameLabel.text = superHero.name
+    
+        return customCell
     }
 
 
