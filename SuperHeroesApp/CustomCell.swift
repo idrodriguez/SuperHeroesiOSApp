@@ -9,8 +9,6 @@
 import UIKit
 
 class CustomCell : UITableViewCell {
-    
     @IBOutlet weak var superHeroNameLabel: UILabel!
-    @IBOutlet weak var superHeroImage: UIImageView!
-    
+    @IBOutlet weak var superHeroPhoto: UIImageView!
 }

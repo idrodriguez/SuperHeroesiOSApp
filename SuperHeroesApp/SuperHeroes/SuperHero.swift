@@ -10,8 +10,10 @@ import Foundation
 
 struct SuperHero {
     let name: String
+    let photo : String
     
-    init(name: String){
+    init(name: String, photo: String){
         self.name = name
+        self.photo = photo
     }    
 }

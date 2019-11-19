@@ -9,5 +9,5 @@
 import Foundation
 
 protocol SuperHeroFactory {
-        func make() -> [SuperHero]
+    func make() -> [SuperHero]
 }

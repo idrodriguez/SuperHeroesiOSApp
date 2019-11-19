@@ -34,33 +34,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SuperHeroCell" id="9hk-8V-5hy" customClass="CustomCell" customModule="SuperHeroesApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" indentationWidth="10" reuseIdentifier="SuperHeroCell" rowHeight="132" id="9hk-8V-5hy" customClass="CustomCell" customModule="SuperHeroesApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="132"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9hk-8V-5hy" id="vmM-yz-VA2">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="131.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="21n-Mf-PGf">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="21n-Mf-PGf">
+                                            <rect key="frame" x="16" y="11" width="343" height="109.5"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="brW-kg-gdo">
-                                            <rect key="frame" x="20" y="24" width="335" height="20"/>
+                                            <rect key="frame" x="20" y="111" width="335" height="20"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="brW-kg-gdo" secondAttribute="trailing" constant="20" symbolic="YES" id="9zv-rg-BCZ"/>
-                                        <constraint firstItem="brW-kg-gdo" firstAttribute="leading" secondItem="vmM-yz-VA2" secondAttribute="leading" constant="20" symbolic="YES" id="Kug-LB-zQl"/>
-                                        <constraint firstAttribute="bottom" secondItem="brW-kg-gdo" secondAttribute="bottom" constant="-0.5" id="wYS-cZ-PVD"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="21n-Mf-PGf" secondAttribute="bottom" constant="0.5" id="5c2-H3-nE0"/>
+                                        <constraint firstItem="21n-Mf-PGf" firstAttribute="top" secondItem="vmM-yz-VA2" secondAttribute="topMargin" id="Aqu-Qi-aaV"/>
+                                        <constraint firstItem="brW-kg-gdo" firstAttribute="leading" secondItem="vmM-yz-VA2" secondAttribute="leading" constant="20" symbolic="YES" id="Di5-eo-iof"/>
+                                        <constraint firstAttribute="trailing" secondItem="brW-kg-gdo" secondAttribute="trailing" constant="20" symbolic="YES" id="bJm-hT-cUp"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="21n-Mf-PGf" secondAttribute="trailing" id="bsz-cN-ZGS"/>
+                                        <constraint firstItem="brW-kg-gdo" firstAttribute="top" secondItem="vmM-yz-VA2" secondAttribute="top" constant="111" id="cqf-HA-yTd"/>
+                                        <constraint firstItem="21n-Mf-PGf" firstAttribute="leading" secondItem="vmM-yz-VA2" secondAttribute="leadingMargin" id="oIR-yp-8Ss"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="superHeroImage" destination="21n-Mf-PGf" id="i3j-wz-BC7"/>
                                     <outlet property="superHeroNameLabel" destination="brW-kg-gdo" id="vQu-An-mx6"/>
+                                    <outlet property="superHeroPhoto" destination="21n-Mf-PGf" id="Kgz-Qk-6kf"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
