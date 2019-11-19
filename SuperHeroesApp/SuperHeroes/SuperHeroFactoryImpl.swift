@@ -8,13 +8,13 @@
 
 import Foundation
 
-class FactorySuperHeroImpl : FactorySuperHero {
+class SuperHeroFactoryImpl : SuperHeroFactory {
 
     init() {
         
     }
 
-    func getSuperHeroes() -> [SuperHero] {
+    func make() -> [SuperHero] {
         
         var superHeroArray : [SuperHero] = []
         

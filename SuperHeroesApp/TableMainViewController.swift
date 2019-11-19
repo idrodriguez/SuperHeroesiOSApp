@@ -10,11 +10,11 @@ import UIKit
 
 class TableMainViewController: UITableViewController {
     var superHeroArray : [SuperHero] = []
-    var factorySuperHero : FactorySuperHeroImpl = FactorySuperHeroImpl.init()
+    var superHeroFactory : SuperHeroFactoryImpl = SuperHeroFactoryImpl.init()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        superHeroArray = factorySuperHero.getSuperHeroes()
+        superHeroArray = superHeroFactory.make()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
