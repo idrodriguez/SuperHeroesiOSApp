@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E25C0432383ED29009D76CE /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E25C0422383ED29009D76CE /* CustomCell.swift */; };
 		0E8066912382F71800AA8F1C /* SuperHeroFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8066902382F71800AA8F1C /* SuperHeroFactory.swift */; };
 		0E8066932382F78900AA8F1C /* SuperHeroFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8066922382F78900AA8F1C /* SuperHeroFactoryImpl.swift */; };
 		35994DCC2382DEA50057F717 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35994DCB2382DEA50057F717 /* AppDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E25C0422383ED29009D76CE /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		0E8066902382F71800AA8F1C /* SuperHeroFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroFactory.swift; sourceTree = "<group>"; };
 		0E8066922382F78900AA8F1C /* SuperHeroFactoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroFactoryImpl.swift; sourceTree = "<group>"; };
 		35994DC82382DEA50057F717 /* SuperHeroesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperHeroesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +64,7 @@
 			children = (
 				35F7FA652382E5A200BE3DF2 /* SuperHeroes */,
 				35994DCB2382DEA50057F717 /* AppDelegate.swift */,
+				0E25C0422383ED29009D76CE /* CustomCell.swift */,
 				35994DCD2382DEA50057F717 /* TableMainViewController.swift */,
 				35994DCF2382DEA50057F717 /* Main.storyboard */,
 				35994DD22382DEA60057F717 /* Assets.xcassets */,
@@ -156,6 +159,7 @@
 				35F7FA692382E70900BE3DF2 /* SuperHero.swift in Sources */,
 				35994DCE2382DEA50057F717 /* TableMainViewController.swift in Sources */,
 				0E8066912382F71800AA8F1C /* SuperHeroFactory.swift in Sources */,
+				0E25C0432383ED29009D76CE /* CustomCell.swift in Sources */,
 				35994DCC2382DEA50057F717 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
