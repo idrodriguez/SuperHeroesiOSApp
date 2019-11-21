@@ -11,9 +11,13 @@ import Foundation
 struct SuperHero {
     let name: String
     let photo : String
+    let description: String
+    let moreInfo: String=""
+    let powers: String=""
     
-    init(name: String, photo: String){
+    init(name: String, photo: String, description: String){
         self.name = name
         self.photo = photo
+        self.description = description
     }    
 }
