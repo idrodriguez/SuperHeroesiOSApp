@@ -21,19 +21,23 @@ class MainTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return superHeroArray.count
     }
-    //TODO: Clean this code. for example: create functions
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let customCell = tableView.dequeueReusableCell(withIdentifier: "SuperHeroCell", for: indexPath) as! CustomCell
         let superHero = superHeroArray[indexPath.row]
         customCell.superHeroNameLabel.text = superHero.name
         
-        let url = NSURL(string: superHero.photo)! as URL
-        let data = NSData.init(contentsOf: url)
-        customCell.superHeroPhoto.image = UIImage.init(data: data! as Data)
-
+        let data = getImageSuperHero(urlImage: superHero.photo)
+        customCell.superHeroPhoto.image = UIImage.init(data: data as Data)
+        
         return customCell
     }
     
+    func getImageSuperHero(urlImage: String) -> NSData {
+        let url = NSURL(string: urlImage)! as URL
+        let data = NSData.init(contentsOf: url)
+        return data!
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 //        if let itemDetailViewController = segue.destination as? ItemDetailViewController {
