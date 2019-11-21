@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TableMainViewController: UITableViewController {
+class MainTableViewController: UITableViewController {
     var superHeroArray : [SuperHero] = []
     var superHeroFactory : SuperHeroFactoryImpl = SuperHeroFactoryImpl.init()
     
@@ -32,6 +32,18 @@ class TableMainViewController: UITableViewController {
         customCell.superHeroPhoto.image = UIImage.init(data: data! as Data)
 
         return customCell
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if let itemDetailViewController = segue.destination as? ItemDetailViewController {
+//            if let cell = sender as? UITableViewCell,
+//                let indexPath = tableView.indexPath(for: cell), let priority = priorityForSectionIndex(indexPath.section) {
+//                let item = todoList.todolist(for: priority)[indexPath.row]
+//                itemDetailViewController.itemToEdit = item
+//                itemDetailViewController.delegate = self
+//            }
+//        }
     }
 }
 
