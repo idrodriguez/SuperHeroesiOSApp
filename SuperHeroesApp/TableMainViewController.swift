@@ -40,14 +40,24 @@ class MainTableViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if let itemDetailViewController = segue.destination as? ItemDetailViewController {
-//            if let cell = sender as? UITableViewCell,
-//                let indexPath = tableView.indexPath(for: cell), let priority = priorityForSectionIndex(indexPath.section) {
-//                let item = todoList.todolist(for: priority)[indexPath.row]
-//                itemDetailViewController.itemToEdit = item
-//                itemDetailViewController.delegate = self
-//            }
-//        }
+        if let detailTableViewController = segue.destination as? DetailTableViewController {
+            if let cell = sender as? UITableViewCell,
+                let indexPath = tableView.indexPath(for: cell){
+                
+                //let item = todoList.todolist(for: priority)[indexPath.row]
+                //itemDetailViewController.itemToEdit = item
+                //itemDetailViewController.delegate = self
+                
+                let superHero = superHeroArray[indexPath.row]
+                //let customCell = tableView.cellForRow(at: indexPath) as? CustomCell
+                
+                detailTableViewController.superHero = superHero
+                
+            }
+        }
+        
+        
+        
     }
 }
 

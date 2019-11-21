@@ -79,10 +79,10 @@
             </objects>
             <point key="canvasLocation" x="96.799999999999997" y="-94.002998500749626"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Detail Table View Controller-->
         <scene sceneID="Yzw-lT-jit">
             <objects>
-                <tableViewController id="ZMq-dN-b1E" sceneMemberID="viewController">
+                <tableViewController id="ZMq-dN-b1E" customClass="DetailTableViewController" customModule="SuperHeroesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="hft-qi-s95">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -137,6 +137,11 @@
                             <outlet property="delegate" destination="ZMq-dN-b1E" id="cxH-8j-jjT"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="descriptionSuperHero" destination="9Ot-Vr-bQn" id="xCZ-JL-Inw"/>
+                        <outlet property="nameSuperHero" destination="k85-rm-sc4" id="Jem-bB-r1Z"/>
+                        <outlet property="photoSuperHero" destination="dGA-Q0-0K5" id="KGG-1r-jzp"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YiE-Rc-6gM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
