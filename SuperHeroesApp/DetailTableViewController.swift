@@ -17,18 +17,8 @@ class DetailTableViewController :UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let data = getImageSuperHero(urlImage: (superHero?.photo)!)
-        photoSuperHero.image = UIImage.init(data: data as Data)
-        
+        photoSuperHero.image = superHero?.getImageSuperHero()
         nameSuperHero.text = superHero?.name
         descriptionSuperHero.text = superHero?.description
-    }
-    
-    //TODO: remove this
-    func getImageSuperHero(urlImage: String) -> NSData {
-        let url = NSURL(string: urlImage)! as URL
-        let data = NSData.init(contentsOf: url)
-        return data!
     }
 }

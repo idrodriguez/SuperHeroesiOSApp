@@ -26,38 +26,18 @@ class MainTableViewController: UITableViewController {
         let customCell = tableView.dequeueReusableCell(withIdentifier: "SuperHeroCell", for: indexPath) as! CustomCell
         let superHero = superHeroArray[indexPath.row]
         customCell.superHeroNameLabel.text = superHero.name
-        
-        let data = getImageSuperHero(urlImage: superHero.photo)
-        customCell.superHeroPhoto.image = UIImage.init(data: data as Data)
-        
+        customCell.superHeroPhoto.image = superHero.getImageSuperHero()
         return customCell
     }
-    
-    func getImageSuperHero(urlImage: String) -> NSData {
-        let url = NSURL(string: urlImage)! as URL
-        let data = NSData.init(contentsOf: url)
-        return data!
-    }
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let detailTableViewController = segue.destination as? DetailTableViewController {
             if let cell = sender as? UITableViewCell,
                 let indexPath = tableView.indexPath(for: cell){
-                
-                //let item = todoList.todolist(for: priority)[indexPath.row]
-                //itemDetailViewController.itemToEdit = item
-                //itemDetailViewController.delegate = self
-                
                 let superHero = superHeroArray[indexPath.row]
-                //let customCell = tableView.cellForRow(at: indexPath) as? CustomCell
-                
                 detailTableViewController.superHero = superHero
-                
             }
         }
-        
-        
-        
     }
 }
 
