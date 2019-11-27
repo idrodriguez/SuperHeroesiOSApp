@@ -11,14 +11,11 @@ import UIKit
 class MainTableViewController: UITableViewController {
     var superHeroArray : [SuperHero] = []
     var superHeroFactory : SuperHeroFactoryImpl = SuperHeroFactoryImpl.init()
-    let connection = ConnectionApiRest()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         superHeroArray = superHeroFactory.make()
         tableView.rowHeight = 150
-        
-       connection.getListSuperHeroFromAPI()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -10,16 +10,17 @@ import UIKit
 
 struct SuperHero {
     let name: String
-    var photo: String
+    let photo: String
     let description: String
-    let moreInfo: String=""
-    let powers: String=""
+    let moreInfo: String
+    let powers: Array<String>
     
-    init(name: String, photo: String, description: String){
+    init(name: String, photo: String, description: String, moreInfo: String, powers: Array<String>){
         self.name = name
         self.description = description
         self.photo = photo
-        
+        self.moreInfo = moreInfo
+        self.powers = powers
     }
     
     func getImageSuperHero() -> UIImage {
