@@ -15,7 +15,6 @@ class MainTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         superHeroArray = superHeroFactory.make()
-        tableView.rowHeight = 150
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
