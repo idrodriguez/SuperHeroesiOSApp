@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0E25C0432383ED29009D76CE /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E25C0422383ED29009D76CE /* CustomCell.swift */; };
-		0E8066912382F71800AA8F1C /* SuperHeroFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8066902382F71800AA8F1C /* SuperHeroFactory.swift */; };
-		0E8066932382F78900AA8F1C /* SuperHeroFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8066922382F78900AA8F1C /* SuperHeroFactoryImpl.swift */; };
+		0E8066912382F71800AA8F1C /* MapperSuperHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8066902382F71800AA8F1C /* MapperSuperHero.swift */; };
+		0E8066932382F78900AA8F1C /* MapperSuperHeroImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8066922382F78900AA8F1C /* MapperSuperHeroImpl.swift */; };
+		0E80C3A523956BD500AE793A /* DelegateMainTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E80C3A423956BD500AE793A /* DelegateMainTable.swift */; };
+		0E917752239654960066CC99 /* DataSourceMainTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E917751239654960066CC99 /* DataSourceMainTable.swift */; };
 		0EB9D5D4238D27B8004C6F0A /* ConnectionApiRest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB9D5D3238D27B8004C6F0A /* ConnectionApiRest.swift */; };
 		0EE4611A23868B1000541CC4 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE4611923868B1000541CC4 /* DetailTableViewController.swift */; };
-		0EE4611C23868BBE00541CC4 /* TableMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE4611B23868BBE00541CC4 /* TableMainViewController.swift */; };
+		0EE4611C23868BBE00541CC4 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE4611B23868BBE00541CC4 /* MainTableViewController.swift */; };
 		35994DCC2382DEA50057F717 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35994DCB2382DEA50057F717 /* AppDelegate.swift */; };
 		35994DD12382DEA50057F717 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35994DCF2382DEA50057F717 /* Main.storyboard */; };
 		35994DD32382DEA60057F717 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35994DD22382DEA60057F717 /* Assets.xcassets */; };
@@ -22,11 +24,13 @@
 
 /* Begin PBXFileReference section */
 		0E25C0422383ED29009D76CE /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
-		0E8066902382F71800AA8F1C /* SuperHeroFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroFactory.swift; sourceTree = "<group>"; };
-		0E8066922382F78900AA8F1C /* SuperHeroFactoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroFactoryImpl.swift; sourceTree = "<group>"; };
+		0E8066902382F71800AA8F1C /* MapperSuperHero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapperSuperHero.swift; sourceTree = "<group>"; };
+		0E8066922382F78900AA8F1C /* MapperSuperHeroImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapperSuperHeroImpl.swift; sourceTree = "<group>"; };
+		0E80C3A423956BD500AE793A /* DelegateMainTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateMainTable.swift; sourceTree = "<group>"; };
+		0E917751239654960066CC99 /* DataSourceMainTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceMainTable.swift; sourceTree = "<group>"; };
 		0EB9D5D3238D27B8004C6F0A /* ConnectionApiRest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionApiRest.swift; sourceTree = "<group>"; };
 		0EE4611923868B1000541CC4 /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
-		0EE4611B23868BBE00541CC4 /* TableMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableMainViewController.swift; sourceTree = "<group>"; };
+		0EE4611B23868BBE00541CC4 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		35994DC82382DEA50057F717 /* SuperHeroesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperHeroesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35994DCB2382DEA50057F717 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35994DD02382DEA50057F717 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -67,14 +71,16 @@
 			isa = PBXGroup;
 			children = (
 				35F7FA652382E5A200BE3DF2 /* SuperHeroes */,
+				0E917751239654960066CC99 /* DataSourceMainTable.swift */,
+				0E80C3A423956BD500AE793A /* DelegateMainTable.swift */,
 				35994DCB2382DEA50057F717 /* AppDelegate.swift */,
 				0E25C0422383ED29009D76CE /* CustomCell.swift */,
-				0EE4611B23868BBE00541CC4 /* TableMainViewController.swift */,
+				0EE4611B23868BBE00541CC4 /* MainTableViewController.swift */,
+				0EE4611923868B1000541CC4 /* DetailTableViewController.swift */,
 				35994DCF2382DEA50057F717 /* Main.storyboard */,
 				35994DD22382DEA60057F717 /* Assets.xcassets */,
 				35994DD42382DEA60057F717 /* LaunchScreen.storyboard */,
 				35994DD72382DEA60057F717 /* Info.plist */,
-				0EE4611923868B1000541CC4 /* DetailTableViewController.swift */,
 			);
 			path = SuperHeroesApp;
 			sourceTree = "<group>";
@@ -83,8 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				35F7FA682382E70900BE3DF2 /* SuperHero.swift */,
-				0E8066902382F71800AA8F1C /* SuperHeroFactory.swift */,
-				0E8066922382F78900AA8F1C /* SuperHeroFactoryImpl.swift */,
+				0E8066902382F71800AA8F1C /* MapperSuperHero.swift */,
+				0E8066922382F78900AA8F1C /* MapperSuperHeroImpl.swift */,
 				0EB9D5D3238D27B8004C6F0A /* ConnectionApiRest.swift */,
 			);
 			path = SuperHeroes;
@@ -162,11 +168,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EE4611A23868B1000541CC4 /* DetailTableViewController.swift in Sources */,
-				0E8066932382F78900AA8F1C /* SuperHeroFactoryImpl.swift in Sources */,
+				0E8066932382F78900AA8F1C /* MapperSuperHeroImpl.swift in Sources */,
 				0EB9D5D4238D27B8004C6F0A /* ConnectionApiRest.swift in Sources */,
+				0E80C3A523956BD500AE793A /* DelegateMainTable.swift in Sources */,
+				0E917752239654960066CC99 /* DataSourceMainTable.swift in Sources */,
 				35F7FA692382E70900BE3DF2 /* SuperHero.swift in Sources */,
-				0EE4611C23868BBE00541CC4 /* TableMainViewController.swift in Sources */,
-				0E8066912382F71800AA8F1C /* SuperHeroFactory.swift in Sources */,
+				0EE4611C23868BBE00541CC4 /* MainTableViewController.swift in Sources */,
+				0E8066912382F71800AA8F1C /* MapperSuperHero.swift in Sources */,
 				0E25C0432383ED29009D76CE /* CustomCell.swift in Sources */,
 				35994DCC2382DEA50057F717 /* AppDelegate.swift in Sources */,
 			);

@@ -45,8 +45,8 @@
                                             <rect key="frame" x="0.0" y="11" width="320" height="109.5"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="brW-kg-gdo">
-                                            <rect key="frame" x="20" y="111" width="280" height="20"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                            <rect key="frame" x="20" y="111" width="280" height="16.5"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                             <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -70,10 +70,16 @@
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="kJt-h6-jrQ" id="h1g-ay-tEw"/>
-                            <outlet property="delegate" destination="kJt-h6-jrQ" id="qLs-yE-mPr"/>
+                            <outlet property="delegate" destination="kJt-h6-jrQ" id="Yjq-br-IoJ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Super Hero List" id="8gS-5a-uh2"/>
+                    <navigationItem key="navigationItem" title="Super Hero List" id="8gS-5a-uh2">
+                        <barButtonItem key="leftBarButtonItem" title="Edit" id="ViK-Fg-zeH">
+                            <connections>
+                                <action selector="enableEdit:" destination="kJt-h6-jrQ" id="qah-qS-8GM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vcy-AL-yZW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

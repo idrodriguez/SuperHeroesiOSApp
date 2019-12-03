@@ -8,12 +8,12 @@
 
 import Foundation
 
-class SuperHeroFactoryImpl : SuperHeroFactory {
+class MapperSuperHeroImpl : MapperSuperHero {
     let connection = ConnectionApiRest()
     
     init(){}
 
-    func make() -> [SuperHero] {
+    func mapSuperHeroes() -> [SuperHero] {
         var superHeroArray : [SuperHero] = []
         
         let dictionary = connection.getListSuperHeroFromAPI()

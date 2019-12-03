@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol SuperHeroFactory {
-    func make() -> [SuperHero]
+protocol MapperSuperHero {
+    func mapSuperHeroes() -> [SuperHero]
 }
