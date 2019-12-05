@@ -8,6 +8,6 @@
 
 import UIKit
 
-class DelegateMainTable : NSObject, UITableViewDelegate {
+class MainTableDelegate : NSObject, UITableViewDelegate {
     
 }

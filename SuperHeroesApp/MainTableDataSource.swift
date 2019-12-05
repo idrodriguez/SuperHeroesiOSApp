@@ -8,12 +8,12 @@
 
 import UIKit
 
-class DataSourceMainTable : NSObject, UITableViewDataSource  {
+class MainTableDataSource : NSObject, UITableViewDataSource  {
     var superHeroArray : [SuperHero] = []
-    var mapperSuperHero : MapperSuperHero = MapperSuperHeroImpl()
+    var superHeroData : SuperHeroArray = SuperHeroArrayImp()
 
     override init(){
-        self.superHeroArray = mapperSuperHero.mapSuperHeroes()
+        self.superHeroArray = superHeroData.getSuperHeroArray()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

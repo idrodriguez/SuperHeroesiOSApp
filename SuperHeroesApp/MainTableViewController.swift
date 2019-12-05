@@ -9,8 +9,8 @@
 import UIKit
 
 class MainTableViewController: UITableViewController {
-    var superHeroDelegate = DelegateMainTable()
-    var superHeroDatasource = DataSourceMainTable()
+    var superHeroDelegate = MainTableDelegate()
+    var superHeroDatasource = MainTableDataSource()
     
     override func viewDidLoad() {
         super.viewDidLoad()

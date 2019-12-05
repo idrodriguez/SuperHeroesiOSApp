@@ -9,14 +9,16 @@
 import Foundation
 
 class MapperSuperHeroImpl : MapperSuperHero {
-    let connection = ConnectionApiRest()
+    let array : [Any]
     
-    init(){}
-
+    init(array: [Any]){
+        self.array = array
+    }
+    
     func mapSuperHeroes() -> [SuperHero] {
         var superHeroArray : [SuperHero] = []
         
-        let dictionary = connection.getListSuperHeroFromAPI()
+        let dictionary = array
         for item in dictionary as! [Dictionary<String, AnyObject>] {
             let name = item["name"] as! String
             let photo = item["photo"] as! String
@@ -27,7 +29,6 @@ class MapperSuperHeroImpl : MapperSuperHero {
             let superHero = SuperHero(name: name, photo: photo, description: description, moreInfo: moreinfolink, powers: powers)
             superHeroArray.append(superHero)
         }
-
         return superHeroArray
     }
 }
