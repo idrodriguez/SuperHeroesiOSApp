@@ -21,8 +21,8 @@
 		35994DD62382DEA60057F717 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35994DD42382DEA60057F717 /* LaunchScreen.storyboard */; };
 		35AB9B4C2398EE190048EF52 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB9B4B2398EE190048EF52 /* Repository.swift */; };
 		35AB9B4E2398F1120048EF52 /* RepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB9B4D2398F1120048EF52 /* RepositoryImpl.swift */; };
-		35AB9B502398F65D0048EF52 /* SuperHeroArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB9B4F2398F65D0048EF52 /* SuperHeroArray.swift */; };
-		35AB9B522398F68D0048EF52 /* SuperHeroArrayImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB9B512398F68D0048EF52 /* SuperHeroArrayImp.swift */; };
+		35AB9B502398F65D0048EF52 /* GetSuperHeroListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB9B4F2398F65D0048EF52 /* GetSuperHeroListUseCase.swift */; };
+		35AB9B522398F68D0048EF52 /* GetSuperHeroListUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB9B512398F68D0048EF52 /* GetSuperHeroListUseCaseImpl.swift */; };
 		35F7FA692382E70900BE3DF2 /* SuperHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F7FA682382E70900BE3DF2 /* SuperHero.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,8 +43,8 @@
 		35994DD72382DEA60057F717 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35AB9B4B2398EE190048EF52 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		35AB9B4D2398F1120048EF52 /* RepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryImpl.swift; sourceTree = "<group>"; };
-		35AB9B4F2398F65D0048EF52 /* SuperHeroArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroArray.swift; sourceTree = "<group>"; };
-		35AB9B512398F68D0048EF52 /* SuperHeroArrayImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroArrayImp.swift; sourceTree = "<group>"; };
+		35AB9B4F2398F65D0048EF52 /* GetSuperHeroListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSuperHeroListUseCase.swift; sourceTree = "<group>"; };
+		35AB9B512398F68D0048EF52 /* GetSuperHeroListUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSuperHeroListUseCaseImpl.swift; sourceTree = "<group>"; };
 		35F7FA682382E70900BE3DF2 /* SuperHero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHero.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,6 +59,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0ECDFD11239FA3AE0040599B /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				0E80C3A423956BD500AE793A /* MainTableDelegate.swift */,
+				35994DCB2382DEA50057F717 /* AppDelegate.swift */,
+				0E25C0422383ED29009D76CE /* CustomCell.swift */,
+				0EE4611B23868BBE00541CC4 /* MainTableViewController.swift */,
+				0EE4611923868B1000541CC4 /* DetailTableViewController.swift */,
+				0E917751239654960066CC99 /* MainTableDataSource.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		0ECDFD12239FA3BE0040599B /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				35AB9B4F2398F65D0048EF52 /* GetSuperHeroListUseCase.swift */,
+				35AB9B512398F68D0048EF52 /* GetSuperHeroListUseCaseImpl.swift */,
+				35F7FA682382E70900BE3DF2 /* SuperHero.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		0ECDFD13239FA3CA0040599B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0E8066902382F71800AA8F1C /* MapperSuperHero.swift */,
+				0E8066922382F78900AA8F1C /* MapperSuperHeroImpl.swift */,
+				0EB9D5D3238D27B8004C6F0A /* ConnectionApiRest.swift */,
+				35AB9B4B2398EE190048EF52 /* Repository.swift */,
+				35AB9B4D2398F1120048EF52 /* RepositoryImpl.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		35994DBF2382DEA40057F717 = {
 			isa = PBXGroup;
 			children = (
@@ -78,34 +113,15 @@
 		35994DCA2382DEA50057F717 /* SuperHeroesApp */ = {
 			isa = PBXGroup;
 			children = (
-				35F7FA652382E5A200BE3DF2 /* SuperHeroes */,
-				0E917751239654960066CC99 /* MainTableDataSource.swift */,
-				0E80C3A423956BD500AE793A /* MainTableDelegate.swift */,
-				35994DCB2382DEA50057F717 /* AppDelegate.swift */,
-				0E25C0422383ED29009D76CE /* CustomCell.swift */,
-				0EE4611B23868BBE00541CC4 /* MainTableViewController.swift */,
-				0EE4611923868B1000541CC4 /* DetailTableViewController.swift */,
+				0ECDFD13239FA3CA0040599B /* Data */,
+				0ECDFD12239FA3BE0040599B /* Domain */,
+				0ECDFD11239FA3AE0040599B /* Presentation */,
 				35994DCF2382DEA50057F717 /* Main.storyboard */,
 				35994DD22382DEA60057F717 /* Assets.xcassets */,
 				35994DD42382DEA60057F717 /* LaunchScreen.storyboard */,
 				35994DD72382DEA60057F717 /* Info.plist */,
 			);
 			path = SuperHeroesApp;
-			sourceTree = "<group>";
-		};
-		35F7FA652382E5A200BE3DF2 /* SuperHeroes */ = {
-			isa = PBXGroup;
-			children = (
-				35F7FA682382E70900BE3DF2 /* SuperHero.swift */,
-				0E8066902382F71800AA8F1C /* MapperSuperHero.swift */,
-				0E8066922382F78900AA8F1C /* MapperSuperHeroImpl.swift */,
-				0EB9D5D3238D27B8004C6F0A /* ConnectionApiRest.swift */,
-				35AB9B4B2398EE190048EF52 /* Repository.swift */,
-				35AB9B4D2398F1120048EF52 /* RepositoryImpl.swift */,
-				35AB9B4F2398F65D0048EF52 /* SuperHeroArray.swift */,
-				35AB9B512398F68D0048EF52 /* SuperHeroArrayImp.swift */,
-			);
-			path = SuperHeroes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,8 +197,8 @@
 			files = (
 				0EE4611A23868B1000541CC4 /* DetailTableViewController.swift in Sources */,
 				0E8066932382F78900AA8F1C /* MapperSuperHeroImpl.swift in Sources */,
-				35AB9B522398F68D0048EF52 /* SuperHeroArrayImp.swift in Sources */,
-				35AB9B502398F65D0048EF52 /* SuperHeroArray.swift in Sources */,
+				35AB9B522398F68D0048EF52 /* GetSuperHeroListUseCaseImpl.swift in Sources */,
+				35AB9B502398F65D0048EF52 /* GetSuperHeroListUseCase.swift in Sources */,
 				0EB9D5D4238D27B8004C6F0A /* ConnectionApiRest.swift in Sources */,
 				0E80C3A523956BD500AE793A /* MainTableDelegate.swift in Sources */,
 				0E917752239654960066CC99 /* MainTableDataSource.swift in Sources */,

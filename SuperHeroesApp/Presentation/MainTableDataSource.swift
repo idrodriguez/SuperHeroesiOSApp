@@ -10,10 +10,11 @@ import UIKit
 
 class MainTableDataSource : NSObject, UITableViewDataSource  {
     var superHeroArray : [SuperHero] = []
-    var superHeroData : SuperHeroArray = SuperHeroArrayImp()
-
+    var getSuperHeroListUseCase : GetSuperHeroListUseCase
+    
     override init(){
-        self.superHeroArray = superHeroData.getSuperHeroArray()
+        getSuperHeroListUseCase = GetSuperHeroListUseCaseImpl()
+        superHeroArray = getSuperHeroListUseCase.execute()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -28,7 +29,6 @@ class MainTableDataSource : NSObject, UITableViewDataSource  {
         return customCell
     }
     
-    //
     func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
         return true
     }

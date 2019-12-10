@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol SuperHeroArray {
-    func getSuperHeroArray()->[SuperHero]
+protocol GetSuperHeroListUseCase {
+    func execute() -> [SuperHero]
 }

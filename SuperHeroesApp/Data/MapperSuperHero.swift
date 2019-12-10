@@ -9,5 +9,5 @@
 import Foundation
 
 protocol MapperSuperHero {
-    func mapSuperHeroes() -> [SuperHero]
+    func transform(_ data: [Dictionary<String, AnyObject>]?) -> [SuperHero]
 }

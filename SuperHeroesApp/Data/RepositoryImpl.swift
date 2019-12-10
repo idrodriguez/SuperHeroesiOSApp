@@ -10,14 +10,15 @@ import Foundation
 
 class RepositoryImpl : Repository {
     let connection = ConnectionApiRest()
-    let mapper : MapperSuperHero
+    let mapper = MapperSuperHeroImpl()
+    let superHeroArray: [SuperHero]
     
     init(){
         let dictionary = connection.getListSuperHeroFromAPI()
-        mapper = MapperSuperHeroImpl(array: dictionary ?? [])
+        superHeroArray = mapper.transform(dictionary)
     }
     
     func getArrayListSuperHero()->[SuperHero]{
-        return mapper.mapSuperHeroes()
+        return superHeroArray
     }
 }

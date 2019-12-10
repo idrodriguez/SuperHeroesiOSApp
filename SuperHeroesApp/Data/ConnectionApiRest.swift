@@ -11,14 +11,14 @@ import Foundation
 class ConnectionApiRest {
     let url = URL(string: "https://bs-university-superheroes.herokuapp.com")!
     
-    func getListSuperHeroFromAPI()-> [Any]?{
+    func getListSuperHeroFromAPI()-> [Dictionary<String, AnyObject>]?{
         do {
             if let file = URL(string: "https://bs-university-superheroes.herokuapp.com") {
                 let data = try Data(contentsOf: file)
                 let json = try JSONSerialization.jsonObject(with: data, options: [])
                 if let object = json as? [String: Any] {
                     print(object)
-                } else if let object = json as? [Any]{
+                } else if let object = json as? [Dictionary<String, AnyObject>]{
                     return object
                     
                 } else {
